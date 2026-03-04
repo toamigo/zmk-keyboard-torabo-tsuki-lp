@@ -24,16 +24,33 @@
         };
     };
 
+    macros {
+        Alt_Grave: Alt_Grave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp GRAVE>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp RALT>;
+
+            label = "ALT_GRAVE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         layer_0 {
             bindings = <
-&kp ESC       &kp N1  &kp N2    &kp N3    &kp N4           &kp N5                                  &kp N6       &kp N7  &kp N8     &kp N9            &kp N0             &kp EQUAL
-&kp TAB       &kp Q   &kp W     &kp E     &kp R            &kp T                                   &kp Y        &kp U   &kp I      &kp O             &kp P              &kp MINUS
-&kp LCTRL     &kp A   &kp S     &kp D     &kp F            &kp G        &mkp LCLK  &mkp RCLK       &mm_ch_bs    &kp J   &kp K      &kp L             &lt 1 SEMICOLON    &mt RCTRL SQT
-&kp LSHFT     &kp Z   &kp X     &kp C     &kp V            &kp B        &kp GRAVE  &kp BACKSPACE   &kp N        &kp M   &kp COMMA  &kp DOT           &kp SLASH          &kp RSHFT
-&kp CAPSLOCK  &mo 4   &kp LGUI  &kp LALT  &lt 2 BACKSPACE  &lt 3 SPACE  &lt 1 DEL  &lt 2 RA(GRAVE) &lt 3 ENTER  &trans  &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
+&kp ESC       &kp N1  &kp N2    &kp N3    &kp N4           &kp N5                                 &kp N6       &kp N7  &kp N8     &kp N9            &kp N0             &kp EQUAL
+&kp TAB       &kp Q   &kp W     &kp E     &kp R            &kp T                                  &kp Y        &kp U   &kp I      &kp O             &kp P              &kp MINUS
+&kp LCTRL     &kp A   &kp S     &kp D     &kp F            &kp G        &mkp LCLK  &mkp RCLK      &mm_ch_bs    &kp J   &kp K      &kp L             &lt 1 SEMICOLON    &mt RCTRL SQT
+&kp LSHFT     &kp Z   &kp X     &kp C     &kp V            &kp B        &kp GRAVE  &kp BACKSPACE  &kp N        &kp M   &kp COMMA  &kp DOT           &kp SLASH          &kp RSHFT
+&kp CAPSLOCK  &mo 4   &kp LGUI  &kp LALT  &lt 2 BACKSPACE  &lt 3 SPACE  &lt 1 DEL  &Alt_Grave     &lt 3 ENTER  &trans  &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
             >;
         };
 
