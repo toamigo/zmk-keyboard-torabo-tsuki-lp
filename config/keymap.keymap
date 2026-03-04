@@ -24,19 +24,6 @@
         };
     };
 
-    macros {
-        Alt_Tilde: Alt_Tilda {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press &kp RALT>,
-                <&macro_tap &kp GRAVE>,
-                <&macro_release &kp RALT>,
-                ;
-            label = "ALT_TILDA";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
