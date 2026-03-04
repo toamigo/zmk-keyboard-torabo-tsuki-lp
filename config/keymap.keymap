@@ -29,13 +29,10 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp RIGHT_ALT>,
-                <&macro_tap>,
-                <&kp LC(GRAVE)>,
-                <&macro_release>,
-                <&kp RIGHT_ALT>;
-
+                <&macro_press &kp RIGHT_ALT>,
+                <&macro_tap &kp LC(GRAVE)>,
+                <&macro_release &kp RIGHT_ALT>,
+                ;
             label = "ALT_TILDA";
         };
     };
