@@ -88,7 +88,7 @@
 &trans  &kp F1         &kp F2         &kp F3         &kp F4         &kp F5                         &kp F6    &kp F7          &kp F8          &kp F9     &kp F10          &trans
 &trans  &kp LA(LC(Q))  &kp LA(LC(W))  &kp ESCAPE     &kp LA(LC(R))  &kp LA(LC(T))                  &trans    &trans          &kp UP_ARROW    &trans     &kp PRINTSCREEN  &trans
 &trans  &mo 5          &kp LA(LC(S))  &kp DELETE     &kp LA(LC(F))  &kp LA(LC(G))  &trans  &trans  &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans           &trans
-&trans  &kp LC(LA(Z))  &kp LA(LC(X))  &kp LA(LC(C))  &kp LA(LC(V))  &kp LC(LA(B))  &trans  &trans  &kp END   &trans          &trans          &trans     &trans           &trans
+&trans  &kp LC(LA(Z))  &kp LA(LC(X))  &kp LA(LC(C))  &kp LA(LC(V))  &kp LC(LA(B))  &trans  &trans  &kp END   &kp BACKSPACE   &trans          &trans     &trans           &trans
 &trans  &trans         &trans         &trans         &trans         &trans         &trans  &trans  &trans    &trans          &trans          &trans     &trans           &trans
             >;
         };
